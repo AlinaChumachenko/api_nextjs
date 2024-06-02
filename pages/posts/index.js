@@ -19,8 +19,9 @@ const Posts = ({ posts }) => {
       <Head>
         <title>Posts</title>
       </Head>
+
       <Heading text="Posts list:" />
-      <ul>
+      <ul className="list-disc pl-4 gap-5 mx-10">
         {posts &&
           posts.map(({ id, title }) => (
             <li key={id}>

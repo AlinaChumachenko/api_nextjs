@@ -19,10 +19,11 @@ const Contacts = ({ contacts }) => {
       <Head>
         <title>Contacts</title>
       </Head>
+
       <Heading text="Contacts list:" />
-      <ul>
+      <ul className="list-disc pl-4 gap-5 mx-10">
         {contacts &&
-          contacts.map(({ id, name, email }) => (
+          contacts.map(({ id, name }) => (
             <li key={id}>
               <Link href={`/contacts/${id}`}>{name}</Link>
             </li>
