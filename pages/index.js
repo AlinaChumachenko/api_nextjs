@@ -6,7 +6,9 @@ const Home = () => (
     <Head>
       <title>Home</title>
     </Head>
-    <Heading text="api_nextjs" />
+    <div className="min-h-screen flex justify-center items-center">
+      <Heading text="api_nextjs" />
+    </div>
   </>
 );
 
